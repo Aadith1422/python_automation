@@ -40,3 +40,16 @@ for ts in timestamp:
 print("\nError Lines:")
 for err in error_lines:
     print("  ->", err)
+
+with open("extracted_ips.txt", "w") as f:
+    for ip in ip_addresses:
+        f.write(ip + "\n")
+
+with open("timestamps.txt", "w") as f:
+    for ts in timestamp:
+        f.write(ts + "\n")
+
+with open("errors.txt", "w") as f:
+    for err in error_lines:
+        f.write(err + "\n")
+    
